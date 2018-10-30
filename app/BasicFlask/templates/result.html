@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3> Dictionary in table format </h3>
+<table border=2 cellpadding=20 >
+	<tr>
+		<th> Key </th>
+		<th> Value</th>
+	</tr>
+	{% for key,value in dict.items() %}
+	<tr>
+		<td> {{ key }} </td>
+		<td> {{ value }} </td>
+	</tr>
+	{% endfor %}
+</table>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3> Hi {{namelst[0]}}</h3> 
+{% msgDict=namelst [-1] %}         
+<table border=0 >
+	{% for key,value in msgDict.items() %}
+	<tr>
+		<td>   {{ key }}  </td> 
+		<td> says 
+		<td> <b>  {{ value }}  </b> </td>
+	</tr>
+	{% endfor %}
+</table>
+
+</body>
+</html>
